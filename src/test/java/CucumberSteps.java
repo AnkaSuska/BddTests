@@ -1,6 +1,6 @@
 
-
 import com.beust.jcommander.IValueValidator;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -41,10 +41,13 @@ public class CucumberSteps {
         System.out.println("savingAccount" + savingAccount);
     }
 
-    @And("Statement appear (string)")
+    @And("Statement appear {string}")
     public void statement(String hodor) {
     System.out.println(hodor);
 
     }
+
+
+
 }
 
